@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  # Python IMAGE
+  app:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    container_name: cmfdev-python-app
+    platform: linux/x86_64
